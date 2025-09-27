@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <title>Giới thiệu bản thân</title>
+  <style>
+    h1, h2, h3, h4 {
+      font-size: 24px;
+      text-shadow: 1px 1px black;
+    }
+
+    #gioi-thieu {
+      background-color: #F3FDE8;
+      padding: 20px;
+    }
+
+    #lien-he {
+      background: url('bg.jpg') repeat;
+      padding: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+
+    nav, footer {
+      background-color: #d4f2f4;
+      color: #0b0848;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #0b0848;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .box {
+      margin: 20px;
+      border: 1px solid #ccc;
+      padding: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#gioi-thieu">Giới thiệu bản thân</a> |
+    <a href="#lien-he">Gửi thông tin và liên hệ cùng tôi</a>
+  </nav>
+
+  <h1 style="color:#CAEDFF;">Trang giới thiệu bản thân</h1>
+
+  <div class="box" id="gioi-thieu">
+    <h2 style="color:#D8B4F8;">Giới thiệu bản thân</h2>
+
+    <!-- Ảnh đại diện canh giữa -->
+    <div style="text-align:center;">
+      <img class="avatar" src="E:/avatar.jpg" alt="Ảnh đại diện của tôi" width="120" height="120" />
+    </div>
+
+    <h3 style="color:#FFC7EA;">Thông tin cơ bản</h3>
+    <ul>
+      <li>Tên: Liên Thặng Quý </li>
+      <li>Năm sinh: 2004</li>
+      <li>Chuyên ngành: Công nghệ thông tin Việt-Nhật</li>
+    </ul>
+
+    <h3 style="color:#FFC7EA;">Sở thích</h3>
+    <h4>Món ăn</h4>
+    <ol>
+      <li>Cháo dinh dưỡng</li>
+      <li>Hải sản sốt kajun</li>
+      <li>Pizza</li>
+    </ol>
+
+    <h4>Giải trí</h4>
+    <ul>
+      <li><strong>Trò chơi</strong>
+        <ul>
+          <li>Genshin Impact</li>
+          <li>Bóng đá</li>
+          <li>Đọc sách</li>
+        </ul>
+      </li>
+      <li><strong>Bài hát yêu thích</strong>
+        <ul>
+          <li>Từng Là Chúng Ta</li>
+          <li>Kho Báu</li>
+          <li>Slatt on</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3 style="color:#FFC7EA;">Mục tiêu của bản thân</h3>
+    <!-- Bảng mục tiêu -->
+    <table>
+      <tr>
+        <th>Mục tiêu</th>
+        <th>Thời hạn</th>
+        <th>Hoàn thành</th>
+      </tr>
+      <tr>
+        <td>Học hỏi công nghệ web</td>
+        <td>6 tháng</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>Rèn luyện tiếng Nhật mỗi ngày</td>
+        <td>12 tháng</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>Tìm kiếm cơ hội thực tập</td>
+        <td>9 tháng</td>
+        <td><input type="checkbox"></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Form liên hệ -->
+<div class="box" id="lien-he">
+  <h2 style="color:#D8B4F8;">Gửi thông tin và giao lưu cùng tôi</h2>
+  <form>
+    <label for="name">Họ và tên:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Tin nhắn:</label><br>
+    <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+    <label>Giới tính:</label><br>
+    <input type="radio" id="nam" name="gender" value="Nam">
+    <label for="nam">Nam</label>
+    <input type="radio" id="nu" name="gender" value="Nữ">
+    <label for="nu">Nữ</label>
+    <br><br>
+
+    <label>Sở thích:</label><br>
+    <input type="checkbox" id="music" name="hobby" value="Nghe nhạc">
+    <label for="music">Nghe nhạc</label>
+    <input type="checkbox" id="swim" name="hobby" value="Bơi lội">
+    <label for="swim">Bơi lội</label>
+    <input type="checkbox" id="beach" name="hobby" value="Biển">
+    <label for="beach">Biển</label>
+    <br><br>
+
+    <label for="major">Ngành:</label>
+    <select id="major" name="major">
+      <option value="cntt">Công nghệ thông tin</option>
+      <option value="khoahocmt">Khoa học Máy tính</option>
+      <option value="mmt">Mạng máy tính</option>
+      <option value="attt">An toàn thông tin</option>
+    </select>
+    <br><br>
+
+    <input type="submit" value="Gửi">
+  </form>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <p>@2024 22521557 Liên Thặng Quý Trung</p>
+  </footer>
+</body>
+</html>
