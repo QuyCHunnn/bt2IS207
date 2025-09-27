@@ -1,0 +1,43 @@
+/* Internal CSS cho toàn bộ h1,h2,h3,h4 */
+h1, h2, h3, h4 {
+  font-size: 24px;
+  text-shadow: 1px 1px black; /* viền chữ đen */
+}
+
+/* Hai div */
+#gioi-thieu {
+  background-color: #F3FDE8;
+  padding: 20px;
+}
+#lien-he {
+  background: url('bg.jpg') repeat;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Bảng mục tiêu */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 8px;
+}
+
+/* Menu và footer */
+nav, footer {
+  background-color: #d4f2f4;
+  color: #0b0848;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: #0b0848;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.box {
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 16px;
+}
